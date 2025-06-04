@@ -1,315 +1,1502 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawws | Making Cities Better for All 🐕</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-icon">🐾</span>
-                <span class="logo-text">Pawws</span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#volunteer" class="nav-link">Volunteer</a></li>
-                <li class="nav-item"><a href="#impact" class="nav-link">Impact Stories</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pawws - Building Pet-Friendly Cities Together 🐾</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="successModal" class="modal success-modal">
+      <div class="modal-content success-content">
+        <div class="success-header">
+          <div class="success-icon">✅</div>
+          <h3 id="successTitle">Success!</h3>
+          <span class="close success-close">&times;</span>
         </div>
+        <div class="success-body">
+          <p id="successMessage">Your message has been sent successfully!</p>
+          <button class="btn btn-primary" onclick="closeSuccessModal()">
+            <span class="btn-icon"></span>
+            Got it!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="logo-icon">🐾</div>
+          <span class="logo-text">Pawws</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#volunteer" class="nav-link">Volunteer</a></li>
+          <li><a href="#adopt" class="nav-link">Adopt</a></li>
+          <li><a href="#impact" class="nav-link">Impact</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="title-line">Every Street Dog</span>
-                        <span class="title-line">Deserves a</span>
-                        <span class="title-line highlight">Loving City 🏙️❤️</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        Join our mission to create compassionate, inclusive urban spaces where every four-legged friend can thrive. Together, we're building cities that care. 🐕✨
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#volunteer" class="btn btn-primary">
-                            <i class="fas fa-heart"></i>
-                            Join the Movement
-                        </a>
-                        <a href="#about" class="btn btn-secondary">
-                            <i class="fas fa-play"></i>
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="floating-elements">
-                        <span class="floating-emoji">🐕</span>
-                        <span class="floating-emoji">❤️</span>
-                        <span class="floating-emoji">🏠</span>
-                        <span class="floating-emoji">🌟</span>
-                    </div>
-                </div>
+      <div class="hero-background">
+        <div class="hero-pattern"></div>
+      </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-icon">🐥</span></span>
+            <span>Making Cities Pet-Friendly Since 2024</span>
+          </div>
+          <h1 class="hero-title">
+            Every Street Dog Deserves a
+            <span class="highlight">Safe Haven</span>
+          </h1>
+          <p class="hero-subtitle">
+            Join our mission to transform cities into compassionate communities
+            where every paw finds love, care, and belonging. Together, we're
+            building a world where no dog is forgotten.
+          </p>
+          <div class="hero-buttons">
+            <a href="#volunteer" class="btn btn-primary">
+              Start Volunteering
+            </a>
+            <a href="#adopt" class="btn btn-secondary">
+              Find Your Companion
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">2,847</div>
+              <div class="stat-label">Dogs Rescued</div>
             </div>
+            <div class="stat-item">
+              <div class="stat-number">1,523</div>
+              <div class="stat-label">Families United</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">5,672</div>
+              <div class="stat-label">Treatments Given</div>
+            </div>
+          </div>
         </div>
+        <div class="hero-visual">
+          <div class="hero-card main-card">
+            <div class="card-header">
+              <div class="card-icon">🏠</div>
+              <div class="card-title">Safe Haven Found</div>
+            </div>
+            <div class="card-content">
+              <p>Luna found her forever home after 3 months</p>
+              <div class="card-progress">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-elements">
+            <div class="floating-card card-1">
+              <div class="mini-icon">🎯</div>
+              <span>Mission Active</span>
+            </div>
+            <div class="floating-card card-2">
+              <div class="mini-icon">❤️</div>
+              <span>Hearts Connected</span>
+            </div>
+            <div class="floating-card card-3">
+              <div class="mini-icon">✌🏼</div>
+              <span>Lives Changed</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Mission 🎯</h2>
-                <p class="section-subtitle">Building bridges between communities and street dogs</p>
-            </div>
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="card-icon">🏥</div>
-                    <h3>Healthcare Access</h3>
-                    <p>Providing medical care, vaccinations, and sterilization programs for street dogs to ensure their health and well-being.</p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">🍽️</div>
-                    <h3>Feeding Programs</h3>
-                    <p>Establishing sustainable feeding stations and organizing community feeding drives to ensure no dog goes hungry.</p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">🏠</div>
-                    <h3>Shelter & Adoption</h3>
-                    <p>Creating safe spaces and connecting loving families with dogs ready for their forever homes.</p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">📚</div>
-                    <h3>Community Education</h3>
-                    <p>Raising awareness about animal welfare and promoting coexistence between humans and street dogs.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="badge-icon"></span>
+            <span>Our Mission</span>
+          </div>
+          <h2>Building Compassionate Communities</h2>
+          <p>
+            Pawws is more than a campaign—it's a movement transforming how
+            cities care for their most vulnerable residents.
+          </p>
         </div>
+
+        <div class="about-grid">
+          <div class="about-card rescue">
+            <div class="card-background"></div>
+            <div class="card-icon">
+              <div class="icon-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=100&h=100&fit=crop"
+                  alt="Rescue & Protection"
+                  class="service-icon"
+                />
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Rescue & Protection</h3>
+              <p>
+                Emergency response teams saving lives 24/7, ensuring no call for
+                help goes unanswered.
+              </p>
+              <div class="card-footer">
+                <span class="card-stat">24/7 Active</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card medical">
+            <div class="card-background"></div>
+            <div class="card-icon">
+              <div class="icon-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=100&h=100&fit=crop"
+                  alt="Medical Care"
+                  class="service-icon"
+                />
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Medical Care</h3>
+              <p>
+                Comprehensive healthcare including vaccinations, treatments, and
+                specialized surgical care.
+              </p>
+              <div class="card-footer">
+                <span class="card-stat">500+ Monthly</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card homes">
+            <div class="card-background"></div>
+            <div class="card-icon">
+              <div class="icon-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?w=100&h=100&fit=crop"
+                  alt="Forever Homes"
+                  class="service-icon"
+                />
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Forever Homes</h3>
+              <p>
+                Matching loving families with their perfect companions through
+                our careful adoption process.
+              </p>
+              <div class="card-footer">
+                <span class="card-stat">1,523 Matched</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card education">
+            <div class="card-background"></div>
+            <div class="card-icon">
+              <div class="icon-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=100&h=100&fit=crop"
+                  alt="Community Education"
+                  class="service-icon"
+                />
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Community Education</h3>
+              <p>
+                Teaching responsible pet ownership and building awareness about
+                animal welfare.
+              </p>
+              <div class="card-footer">
+                <span class="card-stat">850 Volunteers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Impact Stories Section -->
-    <section id="impact" class="impact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Impact Stories 📖✨</h2>
-                <p class="section-subtitle">Real stories of transformation and hope</p>
-            </div>
-            <div class="stories-carousel">
-                <div class="story-card active">
-                    <div class="story-image">🐕‍🦺</div>
-                    <div class="story-content">
-                        <h3>Max's Journey</h3>
-                        <p>"Found injured and scared, Max is now a certified therapy dog helping children in hospitals. Our medical program saved his life, and now he's saving others." 💪❤️</p>
-                        <div class="story-stats">
-                            <span class="stat">
-                                <strong>From:</strong> Injured stray
-                            </span>
-                            <span class="stat">
-                                <strong>To:</strong> Therapy hero
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="story-card">
-                    <div class="story-image">🐾</div>
-                    <div class="story-content">
-                        <h3>Luna's New Beginning</h3>
-                        <p>"After months of rehabilitation, Luna found her forever family. She now enjoys daily walks in the park and has become the neighborhood's beloved companion." 🌙💕</p>
-                        <div class="story-stats">
-                            <span class="stat">
-                                <strong>From:</strong> Abandoned puppy
-                            </span>
-                            <span class="stat">
-                                <strong>To:</strong> Family member
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="story-card">
-                    <div class="story-image">🏆</div>
-                    <div class="story-content">
-                        <h3>Community Success</h3>
-                        <p>"Our Riverside District became the first pet-friendly zone in the city, with dedicated spaces, feeding stations, and 24/7 veterinary support." 🏙️🎉</p>
-                        <div class="story-stats">
-                            <span class="stat">
-                                <strong>Impact:</strong> 200+ dogs helped
-                            </span>
-                            <span class="stat">
-                                <strong>Volunteers:</strong> 150+ active
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-controls">
-                <button class="carousel-btn prev-btn">❮</button>
-                <button class="carousel-btn next-btn">❯</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Volunteer Section -->
     <section id="volunteer" class="volunteer">
-        <div class="container">
-            <div class="volunteer-content">
-                <div class="volunteer-info">
-                    <h2 class="section-title">Join Our Pack! 🐕‍🦴</h2>
-                    <p class="section-subtitle">Every volunteer makes a difference. Here's how you can help:</p>
-                    <div class="volunteer-options">
-                        <div class="option">
-                            <span class="option-icon">🚶‍♂️</span>
-                            <div class="option-text">
-                                <h4>Dog Walking</h4>
-                                <p>Help street dogs get exercise and socialization</p>
-                            </div>
-                        </div>
-                        <div class="option">
-                            <span class="option-icon">🍽️</span>
-                            <div class="option-text">
-                                <h4>Feeding Programs</h4>
-                                <p>Distribute food at designated feeding stations</p>
-                            </div>
-                        </div>
-                        <div class="option">
-                            <span class="option-icon">🏥</span>
-                            <div class="option-text">
-                                <h4>Medical Support</h4>
-                                <p>Assist with health checkups and treatments</p>
-                            </div>
-                        </div>
-                        <div class="option">
-                            <span class="option-icon">📱</span>
-                            <div class="option-text">
-                                <h4>Digital Advocacy</h4>
-                                <p>Help spread awareness through social media</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="volunteer-form-container">
-                    <form class="volunteer-form" id="volunteerForm" action="https://formspree.io/f/xanybezv" method="POST">
-                        <h3>Ready to Make a Difference? 💪</h3>
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                            <span class="form-icon">👤</span>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Email Address" required>
-                            <span class="form-icon">📧</span>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
-                            <span class="form-icon">📱</span>
-                        </div>
-                        <div class="form-group">
-                            <select id="interest" name="interest" required>
-                                <option value="">Select Your Interest</option>
-                                <option value="walking">Dog Walking 🚶‍♂️</option>
-                                <option value="feeding">Feeding Programs 🍽️</option>
-                                <option value="medical">Medical Support 🏥</option>
-                                <option value="advocacy">Digital Advocacy 📱</option>
-                                <option value="events">Event Organization 🎉</option>
-                                <option value="donations">Donation Management 💝</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <select id="availability" name="availability" required>
-                                <option value="">Time Availability</option>
-                                <option value="weekends">Weekends Only</option>
-                                <option value="evenings">Weekday Evenings</option>
-                                <option value="flexible">Flexible Schedule</option>
-                                <option value="emergency">Emergency Response</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Tell us why you want to help (optional)" rows="3"></textarea>
-                        </div>
-                        <!-- Hidden fields for better tracking -->
-                        <input type="hidden" name="_subject" value="New Pawws Volunteer Registration - {name}">
-                        <input type="hidden" name="_next" value="#volunteer">
-                        <input type="hidden" name="_cc" value="simplysharaj@gmail.com">
-                        
-                        <button type="submit" class="btn btn-primary full-width">
-                            <i class="fas fa-paw"></i>
-                            Join the Movement
-                        </button>
-                    </form>
-                </div>
+      <div class="volunteer-background">
+        <div class="volunteer-pattern"></div>
+      </div>
+      <div class="container">
+        <div class="volunteer-content">
+          <div class="volunteer-info">
+            <div class="section-badge">
+              <span class="badge-icon"></span>
+              <span>Join Our Mission</span>
             </div>
+            <h2>Your Compassion Can Change Everything</h2>
+            <p>
+              Every volunteer hour transforms a life. Whether you have 2 hours a
+              week or 2 hours a month, your contribution creates ripples of hope
+              that extend far beyond what you can imagine.
+            </p>
+
+            <div class="volunteer-options">
+              <div class="option-card transport">
+                <div class="option-icon">
+                  <img
+                    src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=80&h=80&fit=crop"
+                    alt="Transport"
+                    class="volunteer-icon"
+                  />
+                </div>
+                <div class="option-content">
+                  <h4>Transport Hero</h4>
+                  <p>Help rescue teams reach animals in need</p>
+                </div>
+              </div>
+              <div class="option-card care">
+                <div class="option-icon">
+                  <img
+                    src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=80&h=80&fit=crop"
+                    alt="Care"
+                    class="volunteer-icon"
+                  />
+                </div>
+                <div class="option-content">
+                  <h4>Care Assistant</h4>
+                  <p>Daily care, feeding, and comfort activities</p>
+                </div>
+              </div>
+              <div class="option-card digital">
+                <div class="option-icon">
+                  <img
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=80&h=80&fit=crop"
+                    alt="Digital"
+                    class="volunteer-icon"
+                  />
+                </div>
+                <div class="option-content">
+                  <h4>Digital Advocate</h4>
+                  <p>Social media, photography, and storytelling</p>
+                </div>
+              </div>
+              <div class="option-card medical">
+                <div class="option-icon">
+                  <img
+                    src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=80&h=80&fit=crop"
+                    alt="Medical"
+                    class="volunteer-icon"
+                  />
+                </div>
+                <div class="option-content">
+                  <h4>Medical Support</h4>
+                  <p>Assist veterinary teams during treatments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="volunteer-form-container">
+            <form
+              class="volunteer-form"
+              action="https://formspree.io/f/mvgrgzwn"
+              method="POST"
+            >
+              <div class="form-header">
+                <h3>Join Our Community of Heroes</h3>
+                <p>Ready to make a difference? Let's get started!</p>
+              </div>
+
+              <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="_replyto"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+91 123456789"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="availability">Time Availability</label>
+                  <select id="availability" name="availability" required>
+                    <option value="">Please Select</option>
+                    <option value="2-4 hours/week">2-4 hours per week</option>
+                    <option value="4-8 hours/week">4-8 hours per week</option>
+                    <option value="8+ hours/week">8+ hours per week</option>
+                    <option value="weekends-only">Weekends only</option>
+                    <option value="flexible">Flexible schedule</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="skills">Your Superpower</label>
+                  <select id="skills" name="skills" required>
+                    <option value="">Choose below</option>
+                    <option value="animal-care">Animal Care & Handling</option>
+                    <option value="transport">
+                      Transportation & Logistics
+                    </option>
+                    <option value="medical">
+                      Medical/Veterinary Background
+                    </option>
+                    <option value="digital">
+                      Social Media & Digital Marketing
+                    </option>
+                    <option value="fundraising">Fundraising & Events</option>
+                    <option value="administration">
+                      Administration & Documentation
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="motivation">What Drives Your Passion?</label>
+                <textarea
+                  id="motivation"
+                  name="motivation"
+                  placeholder="Share your story and what motivates you to help animals..."
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Volunteer Application - Pawws"
+              />
+              <button type="submit" class="btn btn-primary submit-btn">
+                <span class="btn-icon"></span>
+                Start Making a Difference Today!
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="adopt" class="adopt">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="badge-icon">🐾</span>
+            <span>Find Your Friend</span>
+          </div>
+          <h2>Meet Your Future Best Friend</h2>
+          <p>
+            These amazing companions are waiting for their forever families.
+            Each one has a unique story and boundless love to give.
+          </p>
+        </div>
+
+        <div class="pets-grid">
+          <div class="pet-card" data-pet="Luna" data-breed="Labrador">
+            <div class="pet-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/06/11/14/29/labrador-805863_1280.jpg"
+                alt="Luna - Labrador"
+                class="pet-photo"
+              />
+              <div class="pet-status available">Available</div>
+              <div class="pet-favorite">❤️</div>
+            </div>
+            <div class="pet-info">
+              <div class="pet-header">
+                <h3>Luna</h3>
+                <span class="pet-breed">Labrador</span>
+              </div>
+              <div class="pet-tags">
+                <span class="tag age">2 years</span>
+                <span class="tag gender">Female</span>
+                <span class="tag size">Large</span>
+              </div>
+              <p class="pet-description">
+                Luna is a gentle soul who loves children and long walks. She's
+                been with us for 3 months after being rescued from the streets.
+              </p>
+              <div class="pet-traits">
+                <div class="trait">✓ Good with kids</div>
+                <div class="trait">✓ House trained</div>
+                <div class="trait">✓ Loves walks</div>
+              </div>
+              <button
+                class="btn btn-adopt"
+                onclick="openAdoptionForm('Luna', 'Labrador')"
+              >
+                Meet Luna
+              </button>
+            </div>
+          </div>
+
+          <div class="pet-card" data-pet="Max" data-breed="Beagle">
+            <div class="pet-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2018/12/15/16/03/beagle-3877121_1280.jpg"
+                alt="Max - Beagle"
+                class="pet-photo"
+              />
+              <div class="pet-status available">Available</div>
+              <div class="pet-favorite">❤️</div>
+            </div>
+            <div class="pet-info">
+              <div class="pet-header">
+                <h3>Max</h3>
+                <span class="pet-breed">Beagle</span>
+              </div>
+              <div class="pet-tags">
+                <span class="tag age">4 years</span>
+                <span class="tag gender">Male</span>
+                <span class="tag size">Medium</span>
+              </div>
+              <p class="pet-description">
+                Max is energetic and loyal, perfect for an active family. He
+                knows basic commands and gets along well with other dogs.
+              </p>
+              <div class="pet-traits">
+                <div class="trait">✓ Knows commands</div>
+                <div class="trait">✓ Good with dogs</div>
+                <div class="trait">✓ High energy</div>
+              </div>
+              <button
+                class="btn btn-adopt"
+                onclick="openAdoptionForm('Max', 'Beagle')"
+              >
+                Meet Max
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="pet-card"
+            data-pet="Bella"
+            data-breed="Golden Retriever Mix"
+          >
+            <div class="pet-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/10/10/18/29/golden-retriever-1729519_1280.jpg"
+                alt="Bella - Golden Retriever Mix"
+                class="pet-photo"
+              />
+              <div class="pet-status available">Available</div>
+              <div class="pet-favorite">❤️</div>
+            </div>
+            <div class="pet-info">
+              <div class="pet-header">
+                <h3>Bella</h3>
+                <span class="pet-breed">Golden Retriever Mix</span>
+              </div>
+              <div class="pet-tags">
+                <span class="tag age">3 years</span>
+                <span class="tag gender">Female</span>
+                <span class="tag size">Large</span>
+              </div>
+              <p class="pet-description">
+                Bella is incredibly gentle and intelligent. She's great with
+                kids and has a calm, loving temperament.
+              </p>
+              <div class="pet-traits">
+                <div class="trait">✓ Gentle nature</div>
+                <div class="trait">✓ Great with kids</div>
+                <div class="trait">✓ Calm temperament</div>
+              </div>
+              <button
+                class="btn btn-adopt"
+                onclick="openAdoptionForm('Bella', 'Golden Retriever Mix')"
+              >
+                Meet Bella
+              </button>
+            </div>
+          </div>
+
+          <div class="pet-card" data-pet="Rocky" data-breed="Pitbull Mix">
+            <div class="pet-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2023/06/29/12/05/american-pit-bull-8096263_1280.jpg"
+                alt="Rocky - Pitbull Mix"
+                class="pet-photo"
+              />
+              <div class="pet-status available">Available</div>
+              <div class="pet-favorite">❤️</div>
+            </div>
+            <div class="pet-info">
+              <div class="pet-header">
+                <h3>Rocky</h3>
+                <span class="pet-breed">Pitbull Mix</span>
+              </div>
+              <div class="pet-tags">
+                <span class="tag age">5 years</span>
+                <span class="tag gender">Male</span>
+                <span class="tag size">Large</span>
+              </div>
+              <p class="pet-description">
+                Rocky is a loyal and protective companion who loves his family
+                deeply. He's looking for an experienced owner.
+              </p>
+              <div class="pet-traits">
+                <div class="trait">✓ Loyal companion</div>
+                <div class="trait">✓ Protective nature</div>
+                <div class="trait">✓ Needs experienced owner</div>
+              </div>
+              <button
+                class="btn btn-adopt"
+                onclick="openAdoptionForm('Rocky', 'Pitbull Mix')"
+              >
+                Meet Rocky
+              </button>
+            </div>
+          </div>
+
+          <div class="pet-card" data-pet="Whiskers" data-breed="Tabby Cat">
+            <div class="pet-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2023/07/19/04/56/european-shorthair-8136065_1280.jpg"
+             alt="Whiskers - Tabby Cat"
+                class="pet-photo"
+              />
+              <div class="pet-status available">Available</div>
+              <div class="pet-favorite">❤️</div>
+            </div>
+            <div class="pet-info">
+              <div class="pet-header">
+                <h3>Whiskers</h3>
+                <span class="pet-breed">Tabby Cat</span>
+              </div>
+              <div class="pet-tags">
+                <span class="tag age">1 year</span>
+                <span class="tag gender">Male</span>
+                <span class="tag size">Small</span>
+              </div>
+              <p class="pet-description">
+                Whiskers is playful and affectionate, loves to purr and cuddle.
+                He's litter trained and gets along well with other cats.
+              </p>
+              <div class="pet-traits">
+                <div class="trait">✓ Playful nature</div>
+                <div class="trait">✓ Litter trained</div>
+                <div class="trait">✓ Good with cats</div>
+              </div>
+              <button
+                class="btn btn-adopt"
+                onclick="openAdoptionForm('Whiskers', 'Tabby Cat')"
+              >
+                Meet Whiskers
+              </button>
+            </div>
+          </div>
+
+          <div class="pet-card" data-pet="Shadow" data-breed="Black Cat">
+            <div class="pet-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2023/03/21/08/36/cat-7866716_1280.jpg"
+                alt="Shadow - Black Cat"
+                class="pet-photo"
+              />
+              <div class="pet-status available">Available</div>
+              <div class="pet-favorite">❤️</div>
+            </div>
+            <div class="pet-info">
+              <div class="pet-header">
+                <h3>Shadow</h3>
+                <span class="pet-breed">Black Cat</span>
+              </div>
+              <div class="pet-tags">
+                <span class="tag age">3 years</span>
+                <span class="tag gender">Female</span>
+                <span class="tag size">Small</span>
+              </div>
+              <p class="pet-description">
+                Shadow is a mysterious beauty with a heart full of love. She's
+                independent yet affectionate, perfect for someone who
+                appreciates feline grace.
+              </p>
+              <div class="pet-traits">
+                <div class="trait">✓ Independent</div>
+                <div class="trait">✓ Affectionate</div>
+                <div class="trait">✓ Low maintenance</div>
+              </div>
+              <button
+                class="btn btn-adopt"
+                onclick="openAdoptionForm('Shadow', 'Black Cat')"
+              >
+                Meet Shadow
+              </button>
+            </div>
+          </div>
+
+          <div class="pet-card" data-pet="Princess" data-breed="Siamese">
+            <div class="pet-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/10/07/08/45/cat-2825794_1280.jpg"
+                alt="Princess - Siamese"
+                class="pet-photo"
+              />
+              <div class="pet-status available">Available</div>
+              <div class="pet-favorite">❤️</div>
+            </div>
+            <div class="pet-info">
+              <div class="pet-header">
+                <h3>Princess</h3>
+                <span class="pet-breed">Siamese</span>
+              </div>
+              <div class="pet-tags">
+                <span class="tag age">2 years</span>
+                <span class="tag gender">Female</span>
+                <span class="tag size">Small</span>
+              </div>
+              <p class="pet-description">
+                Princess is a vocal and intelligent cat who loves to "talk" to
+                her humans. She's social and enjoys being the center of
+                attention.
+              </p>
+              <div class="pet-traits">
+                <div class="trait">✓ Very vocal</div>
+                <div class="trait">✓ Highly intelligent</div>
+                <div class="trait">✓ Social personality</div>
+              </div>
+              <button
+                class="btn btn-adopt"
+                onclick="openAdoptionForm('Princess', 'Siamese')"
+              >
+                Meet Princess
+              </button>
+            </div>
+          </div>
+
+          <div class="pet-card" data-pet="Patches" data-breed="Calico">
+            <div class="pet-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2022/03/24/14/42/animal-7089224_1280.jpg"
+                class="pet-photo"
+              />
+              <div class="pet-status available">Available</div>
+              <div class="pet-favorite">❤️</div>
+            </div>
+            <div class="pet-info">
+              <div class="pet-header">
+                <h3>Patches</h3>
+                <span class="pet-breed">Calico</span>
+              </div>
+              <div class="pet-tags">
+                <span class="tag age">4 years</span>
+                <span class="tag gender">Female</span>
+                <span class="tag size">Small</span>
+              </div>
+              <p class="pet-description">
+                Patches is a beautiful calico with a sweet and gentle nature.
+                She enjoys quiet moments and gentle pets, perfect for a calm
+                household.
+              </p>
+              <div class="pet-traits">
+                <div class="trait">✓ Gentle nature</div>
+                <div class="trait">✓ Enjoys quiet time</div>
+                <div class="trait">✓ Sweet personality</div>
+              </div>
+              <button
+                class="btn btn-adopt"
+                onclick="openAdoptionForm('Patches', 'Calico')"
+              >
+                Meet Patches
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="adoptionModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Adoption Application</h3>
+          <span class="close">&times;</span>
+        </div>
+        <form
+          class="adoption-form"
+          action="https://formspree.io/f/xdkzkaja"
+          method="POST"
+        >
+          <div class="form-intro">
+            <p>
+              Thank you for your interest in adopting
+              <span id="selectedPetName" class="pet-name"></span>! Please fill
+              out this application so we can ensure the perfect match.
+            </p>
+          </div>
+
+          <div class="form-section">
+            <h4>Personal Information</h4>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="applicant-name">Full Name *</label>
+                <input
+                  type="text"
+                  id="applicant-name"
+                  name="applicant_name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="applicant-email">Email Address *</label>
+                <input
+                  type="email"
+                  id="applicant-email"
+                  name="_replyto"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="applicant-phone">Phone Number *</label>
+                <input type="tel" id="applicant-phone" name="phone" required />
+              </div>
+              <div class="form-group">
+                <label for="applicant-age">Age Range *</label>
+                <select id="applicant-age" name="age" required>
+                  <option value="">Select your age range</option>
+                  <option value="18-25">18-25</option>
+                  <option value="26-35">26-35</option>
+                  <option value="36-45">36-45</option>
+                  <option value="46-55">46-55</option>
+                  <option value="55+">55+</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h4>Housing Information</h4>
+            <div class="form-group">
+              <label for="home-address">Home Address *</label>
+              <textarea
+                id="home-address"
+                name="address"
+                rows="2"
+                placeholder="Street address, city, state, zip code"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="housing-type">Housing Type *</label>
+                <select id="housing-type" name="housing_type" required>
+                  <option value="">Select housing type</option>
+                  <option value="house">House</option>
+                  <option value="apartment">Apartment</option>
+                  <option value="condo">Condo</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="home-ownership">Do you own or rent? *</label>
+                <select id="home-ownership" name="home_ownership" required>
+                  <option value="">Select option</option>
+                  <option value="own">Own</option>
+                  <option value="rent">Rent</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h4>Household & Experience</h4>
+            <div class="form-group">
+              <label for="household-members">Household Members *</label>
+              <textarea
+                id="household-members"
+                name="household_members"
+                rows="2"
+                placeholder="Please list all people living in your home (ages, relationship)"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="pet-experience">Previous Pet Experience *</label>
+              <textarea
+                id="pet-experience"
+                name="pet_experience"
+                rows="3"
+                placeholder="Tell us about your experience with pets"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="current-pets">Current Pets</label>
+              <textarea
+                id="current-pets"
+                name="current_pets"
+                rows="2"
+                placeholder="Do you currently have any pets? Please describe"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h4>Care & Commitment</h4>
+            <div class="form-group">
+              <label for="daily-schedule">Daily Schedule *</label>
+              <textarea
+                id="daily-schedule"
+                name="daily_schedule"
+                rows="2"
+                placeholder="Describe your typical daily schedule and how a pet would fit in"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="why-adopt"
+                >Why do you want to adopt this pet? *</label
+              >
+              <textarea
+                id="why-adopt"
+                name="why_adopt"
+                rows="3"
+                placeholder="Tell us why you're interested in adopting and what you hope to provide"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="emergency-plan">Emergency Plan *</label>
+              <textarea
+                id="emergency-plan"
+                name="emergency_plan"
+                rows="2"
+                placeholder="What arrangements would you make for your pet in case of emergency or extended travel?"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <input type="hidden" name="selected_pet" id="selected-pet-input" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Pet Adoption Application - Pawws"
+          />
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary adoption-submit">
+              Submit Application
+            </button>
+            <p class="form-note">
+              We'll review your application and contact you within 24-48 hours
+              to schedule a meet-and-greet!
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section id="impact" class="impact">
+      <div class="impact-background">
+        <div class="impact-pattern"></div>
+      </div>
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge light">
+            <span>Community Impact</span>
+          </div>
+          <h2>Community Transformations</h2>
+          <p>
+            Real spaces, real changes, real impact. See how we're building
+            pet-friendly cities that welcome every four-legged resident.
+          </p>
+        </div>
+
+        <div class="stories-grid">
+          <div class="story-card featured">
+            <div class="story-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2014/12/10/05/50/english-bulldog-562723_1280.jpg"
+                alt="Community Dog Park"
+                class="story-photo"
+              />
+              <div class="story-overlay"></div>
+            </div>
+            <div class="story-content">
+              <div class="story-header">
+                <div class="story-category">Community Space</div>
+                <h3>Harmony Hills Dog Park Opens</h3>
+                <span class="story-date">March 2024</span>
+              </div>
+              <p>
+                Harmony Hills in San Antonio, TX has an apartment complex with a
+                dog park. The Harmony Valley Dog Park is another dog park, with
+                a Facebook page where you can find information and events,
+                including a mention of bringing Bob's Bench to the park.
+                Additionally, there's a Harmony Park in Surry Hills, Sydney,
+                Australia, which is an off-leash area for dogs, according to the
+                City of Sydney. Finally, there's a Harmony Hill Animal Hotel &
+                Rescue Haven, with a Facebook page featuring exciting news about
+                a new owner and their commitment to animal care, including dog
+                kennels and cattery services.
+                </p>
+                <img
+                src="https://github.com/sharajmaruthu/img/blob/main/parkimg.png?raw=true"
+                alt="Community Dog Park"
+                class="story-photo"
+              />
+              <p> </p>
+              <div class="story-stats">
+                <div class="stat">
+                  <div class="stat-number">200+</div>
+                  <div class="stat-label">Daily Visitors</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-number">15</div>
+                  <div class="stat-label">Rescue Adoptions</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-card">
+            <div class="story-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/03/31/16/18/dog-4988409_1280.jpg"
+                alt="Pet Festival"
+                class="story-photo"
+              />
+              <div class="story-overlay"></div>
+            </div>
+            <div class="story-content">
+              <div class="story-category">Annual Event</div>
+              <h4>Pawws Festival Success</h4>
+              <p>
+                Over 3,000 attendees celebrated pet adoption, responsible
+                ownership, and community spirit. 47 pets found families that
+                day!
+              </p>
+            </div>
+          </div>
+
+          <div class="story-card">
+            <div class="story-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2022/04/04/12/29/garden-7111101_1280.jpg"
+                alt="Pet Cafe"
+                class="story-photo"
+              />
+              <div class="story-overlay"></div>
+            </div>
+            <div class="story-content">
+              <div class="story-category">Social Hub</div>
+              <h4>Paws & Coffee Café Launch</h4>
+              <p>
+                The city's first pet-friendly café creates a welcoming space
+                where rescued dogs socialize while waiting for adoption.
+              </p>
+            </div>
+          </div>
+
+          <div class="story-card">
+            <div class="story-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/03/17/13/57/veterinary-4940425_1280.jpg"
+                alt="Mobile Vet Clinic"
+                class="story-photo"
+              />
+              <div class="story-overlay"></div>
+            </div>
+            <div class="story-content">
+              <div class="story-category">Healthcare</div>
+              <h4>Mobile Vet Clinic Program</h4>
+              <p>
+                Free healthcare reaches underserved neighborhoods, providing
+                500+ treatments monthly to pets who need it most.
+              </p>
+            </div>
+          </div>
+          <div class="story-card">
+            <div class="story-image">
+              <img
+                src="https://cdn.pixabay.com/photo/2023/04/05/09/44/old-man-7901064_1280.jpg"
+                alt="Pawrents Community"
+                class="story-photo"
+              />
+              <div class="story-overlay"></div>
+            </div>
+            <div class="story-content">
+              <div class="story-category">Social Media</div>
+              <h4>Pawrents Community</h4>
+              <p>
+                A vibrant online community for pet owners to share stories,
+                tips, and support each other in their pet parenting journey.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="impact-stats">
+          <div class="stat-card">
+            <div class="stat-icon">🐕</div>
+            <div class="stat-content">
+              <div class="stat-number">2,847</div>
+              <div class="stat-label">Dogs Rescued</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">❤️</div>
+            <div class="stat-content">
+              <div class="stat-number">1,523</div>
+              <div class="stat-label">Successful Adoptions</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🏥</div>
+            <div class="stat-content">
+              <div class="stat-number">5,672</div>
+              <div class="stat-label">Medical Treatments</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🌟</div>
+            <div class="stat-content">
+              <div class="stat-number">850</div>
+              <div class="stat-label">Active Volunteers</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get in Touch 📞</h2>
-                <p class="section-subtitle">Have questions? We're here to help!</p>
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="section-badge">
+              <span class="badge-icon">📞</span>
+              <span>Get In Touch</span>
             </div>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email Us</h3>
-                    <p>simplysharaj@gmail.com</p>
-                    <a href="mailto:simplysharaj@gmail.com" class="btn btn-outline">Send Email</a>
+            <h2>Every Question Matters</h2>
+            <p>
+              Whether you want to volunteer, adopt, or simply learn more about
+              our mission, we're here to help. Your curiosity is the first step
+              toward making a difference.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-card">
+                <div class="contact-icon">📱</div>
+                <div class="contact-details">
+                  <h4>Emergency Hotline</h4>
+                  <p>1962 - Animal Mobile Medical Ambulance</p>
+                  <span>Available 24/7 - India</span>
                 </div>
-                <div class="contact-card">
-                    <div class="contact-icon">📱</div>
-                    <h3>Call Us</h3>
-                    <p>+91 98765 43210</p>
-                    <a href="tel:+919876543210" class="btn btn-outline">Call Now</a>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-details">
+                  <h4>General Inquiries</h4>
+                  <p>simplysharaj@gmail.com</p>
+                  <span>I respond within 5 hours</span>
                 </div>
-                <div class="contact-card">
-                    <div class="contact-icon">📍</div>
-                    <h3>Visit Us</h3>
-                    <p>123 Pet Street, Animal District<br>Care City, PC 12345</p>
-                    <a href="#" class="btn btn-outline">Get Directions</a>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <div class="contact-details">
+                  <h4>Our Shelter - Coming Soon</h4>
+                  <p>911 - Pawws City</p>
+                  <span>Opening in Summer 2026</span>
                 </div>
+              </div>
             </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/xrbkbejn"
+              method="POST"
+            >
+              <div class="form-header">
+                <h3>Send Us a Message</h3>
+                <p>We'd love to hear from you!</p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email Address</label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="_replyto"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input
+                  type="text"
+                  id="contact-subject"
+                  name="_subject"
+                  placeholder="What's this about?"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  placeholder="How can we help you make a difference?"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn">
+                <span class="btn-icon">✉️</span>
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section main-section">
-                    <div class="footer-logo">
-                        <span class="logo-icon">🐾</span>
-                        <span class="logo-text">Pawws</span>
-                    </div>
-                    <p>Creating compassionate cities where every dog can thrive. Join us in building a more inclusive world, one paw at a time. 🌍❤️</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home 🏠</a></li>
-                        <li><a href="#about">About Us 📖</a></li>
-                        <li><a href="#volunteer">Volunteer 🤝</a></li>
-                        <li><a href="#impact">Impact Stories 📚</a></li>
-                        <li><a href="#contact">Contact Us 📞</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section brand">
+            <div class="footer-logo">
+              <div class="logo-icon">🐾</div>
+              <span class="logo-text">Pawws</span>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Pawws Campaign. Made with ❤️ for our four-legged friends. All rights reserved.</p>
-                <p class="tech-note">Developed by Sharaj MM | Making a real-world impact 🌟</p>
-            </div>
+            <p>
+              Building pet-friendly cities where every animal is valued,
+              protected, and loved. Join our mission to create a more
+              compassionate world.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#volunteer">Volunteer</a></li>
+              <li><a href="#adopt">Adopt</a></li>
+              <li><a href="#impact">Impact Stories</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <div class="footer-text">
+            <p>
+              &copy; 2024 Pawws - Pet-Friendly City Campaign. Made with 🤍 for
+              our four-legged friends by Sharaj MM.
+            </p>
+            <p>
+              Every click, every share, every donation saves a life. Thank you
+              for being part of our mission.
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        document.body.classList.toggle("nav-open");
+      });
+
+      document.querySelectorAll(".nav-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+          document.body.classList.remove("nav-open");
+        })
+      );
+
+      function showSuccessMessage(title, message) {
+        const modal = document.getElementById("successModal");
+        const titleElement = document.getElementById("successTitle");
+        const messageElement = document.getElementById("successMessage");
+
+        titleElement.textContent = title;
+        messageElement.textContent = message;
+
+        modal.style.display = "block";
+        document.body.style.overflow = "hidden";
+
+        setTimeout(() => {
+          modal.querySelector(".modal-content").classList.add("modal-animate");
+        }, 10);
+      }
+
+      function closeSuccessModal() {
+        const modal = document.getElementById("successModal");
+        modal.querySelector(".modal-content").classList.remove("modal-animate");
+        setTimeout(() => {
+          modal.style.display = "none";
+          document.body.style.overflow = "auto";
+        }, 300);
+      }
+
+      document.querySelector(".success-close").onclick = closeSuccessModal;
+      window.addEventListener("click", (event) => {
+        const modal = document.getElementById("successModal");
+        if (event.target === modal) {
+          closeSuccessModal();
+        }
+      });
+
+      const modal = document.getElementById("adoptionModal");
+      const closeBtn = document.querySelector(".close");
+
+      function openAdoptionForm(petName, petBreed) {
+        document.getElementById("selectedPetName").textContent = petName;
+        document.getElementById(
+          "selected-pet-input"
+        ).value = `${petName} (${petBreed})`;
+        modal.style.display = "block";
+        document.body.style.overflow = "hidden";
+
+        setTimeout(() => {
+          modal.querySelector(".modal-content").classList.add("modal-animate");
+        }, 10);
+      }
+
+      closeBtn.onclick = function () {
+        modal.querySelector(".modal-content").classList.remove("modal-animate");
+        setTimeout(() => {
+          modal.style.display = "none";
+          document.body.style.overflow = "auto";
+        }, 300);
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal
+            .querySelector(".modal-content")
+            .classList.remove("modal-animate");
+          setTimeout(() => {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+          }, 300);
+        }
+      };
+
+      document.querySelectorAll(".pet-favorite").forEach((heart) => {
+        heart.addEventListener("click", (e) => {
+          e.stopPropagation();
+          heart.classList.toggle("favorited");
+          heart.textContent = heart.classList.contains("favorited")
+            ? "💖"
+            : "❤️";
+        });
+      });
+
+      async function submitFormData(form, successTitle, successMessage) {
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          if (response.ok) {
+            form.reset();
+            showSuccessMessage(successTitle, successMessage);
+
+
+            if (modal.style.display === "block") {
+              modal
+                .querySelector(".modal-content")
+                .classList.remove("modal-animate");
+              setTimeout(() => {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+              }, 300);
+            }
+          } else {
+            throw new Error("Form submission failed");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          showSuccessMessage(
+            "Error",
+            "There was an issue submitting your form. Please try again or contact us directly."
+          );
+        }
+      }
+
+      document
+        .querySelector(".volunteer-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          submitFormData(
+            this,
+            "Thank You for Volunteering!",
+            "Your volunteer application has been submitted successfully! We'll contact you within 24 hours to discuss how you can start making a difference in the lives of animals in need."
+          );
+        });
+
+      document
+        .querySelector(".contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          submitFormData(
+            this,
+            "Message Sent Successfully!",
+            "Thank you for reaching out to us! We've received your message and will get back to you within 4 hours. Your interest in our mission means the world to us."
+          );
+        });
+
+      document
+        .querySelector(".adoption-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const petName =
+            document.getElementById("selectedPetName").textContent;
+          submitFormData(
+            this,
+            "Adoption Application Submitted! 🐾",
+            `Thank you for your interest in adopting ${petName}! We've received your application and will review it carefully. Expect to hear from us within 24-48 hours to schedule a meet-and-greet. We're excited about the possibility of ${petName} finding their forever home with you!`
+          );
+        });
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+          }
+        });
+      }, observerOptions);
+
+      document
+        .querySelectorAll(".about-card, .pet-card, .story-card, .stat-card")
+        .forEach((el) => {
+          observer.observe(el);
+        });
+
+      const statNumbers = document.querySelectorAll(".stat-number");
+      const statsObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const target = entry.target;
+              const finalNumber = parseInt(
+                target.textContent.replace(/,/g, "")
+              );
+              animateNumber(target, finalNumber);
+              statsObserver.unobserve(target);
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      statNumbers.forEach((stat) => {
+        statsObserver.observe(stat);
+      });
+
+      function animateNumber(element, target) {
+        let current = 0;
+        const increment = target / 60;
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          element.textContent = Math.floor(current).toLocaleString();
+        }, 30);
+      }
+
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 100) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
 </html>
